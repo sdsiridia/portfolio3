@@ -1,0 +1,88 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.main{
+    .container{
+        padding: 0 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .linea{
+                width: 95%;
+                // height: 1%;
+                // margin: 0 auto;
+                border-top: 1.5px solid v.$white;
+                // border-bottom: 4px solid v.$white;
+                margin-bottom: 40px;
+            }
+        
+        .articulos{
+            .articulo{
+                padding: 16px;
+                margin: 16px;
+                border-radius: 8px;
+                h2{
+                    color: v.$white;
+                    text-align: center;
+                    font-size: 32px;
+                    padding-bottom: 3px;
+                    font-weight: bold;
+                }
+                p{
+                    color: v.$white;
+                    text-align: center;
+                    font-size: 16px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        .proyectos{
+            .titulo{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 16px;
+                    margin-bottom:40px;
+                    // box-sizing: border-box;
+                .button{
+                        a{
+                            font-size: 16px;
+                            position: relative;
+                            display: inline-block;
+                            // margin-bottom: 40px;
+                            text-decoration: none;
+                            color: v.$white;
+                            text-transform: uppercase;
+                            letter-spacing: 2.59px;
+                        }
+                    }
+                    .button a::after {
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                bottom: -10px;
+                                width: 100%; 
+                                height: 3px; 
+                                background-color: v.$green; 
+                    }
+                    
+                    h2{
+                        font-size: 32px;
+                        margin: 0;
+                    }
+                }
+            .proyecto{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                img{
+                    width: 90%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
