@@ -46,7 +46,65 @@
                     padding: 0 16px;
                     margin-bottom:40px;
                     // box-sizing: border-box;
-                .button{
+                // .button{
+                //         a{
+                //             font-size: 16px;
+                //             position: relative;
+                //             display: inline-block;
+                //             // margin-bottom: 40px;
+                //             text-decoration: none;
+                //             color: v.$white;
+                //             text-transform: uppercase;
+                //             letter-spacing: 2.59px;
+                //         }
+                //     }
+                //     .button a::after {
+                //                 content: '';
+                //                 position: absolute;
+                //                 left: 0;
+                //                 bottom: -10px;
+                //                 width: 100%; 
+                //                 height: 3px; 
+                //                 background-color: v.$green; 
+                //     }
+                    
+                    h2{
+                        font-size: 32px;
+                        margin: 0;
+                    }
+                }
+            .proyecto{
+                display: flex;
+                justify-content: center;
+                // align-items: start;
+                flex-direction: column;
+                img{
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 20px;
+                }
+                h3{
+                    font-size: 24px;
+                    margin-bottom: 7px;
+                }
+                .habilidades{
+                        margin-bottom: 40px;
+                        display: flex;
+                        justify-content: start;
+                        gap:20px;
+                }
+                .link{
+                    display: flex;
+                    flex-direction: row;
+                    gap:20px;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
+.button{
                         a{
                             font-size: 16px;
                             position: relative;
@@ -67,22 +125,3 @@
                                 height: 3px; 
                                 background-color: v.$green; 
                     }
-                    
-                    h2{
-                        font-size: 32px;
-                        margin: 0;
-                    }
-                }
-            .proyecto{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                img{
-                    width: 90%;
-                    height: auto;
-                }
-            }
-        }
-    }
-}
