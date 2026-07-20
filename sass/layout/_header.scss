@@ -11,10 +11,55 @@
         justify-content: center;
         flex-direction: column;
         .encabezado{
+            position: relative;
             background-image: linear-gradient(to top, v.$gradient-start, v.$gradient-end);
             h2{
                 color: v.$white;
                 text-align: center;
+            }
+            .adam{
+                .adam__img{
+                    position: relative;
+                    z-index: 10;
+                }
+            }
+            .oval{
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                overflow: visible;
+                top:100px;
+                right: 100px;
+                z-index: 0;
+                stroke-width: 2px;
+                stroke:v.$gray;
+                &__2{
+                    position: absolute;
+                    top:10px;
+                    right: 0px;
+                }
+                &__3{
+                    position: absolute;
+                    top:20px;
+                    right: 0px;
+                }
+                &__4{
+                    position: absolute;
+                    top:30px;
+                    right: 0px;
+                }
+                &__5{
+                    position: absolute;
+                    top:40px;
+                    right: 0px;
+                }
+
+            }
+            .circulo{
+                position: absolute;
+                width: 140px;
+                top:230px;
+                right: -180px;
             }
         }
     }
