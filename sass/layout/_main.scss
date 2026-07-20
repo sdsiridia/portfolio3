@@ -146,11 +146,14 @@
         }
         .container__contacto{
             background-color: v.$gray;
-            padding: 0;
-            margin: 0;
+            width: calc(100% + 32px);
+            margin: 0 -16px;
+            padding: 0 16px;
+            box-sizing: border-box;
         }
         .contacto{
-            padding-bottom: 40px;
+            padding-bottom: 10px;
+            padding-top:40px ;
             h3{
                 font-size: 40px;
                 margin-bottom: 7px;
@@ -227,6 +230,7 @@
             font-size: 16px;
             box-sizing: border-box;
             transition: border-color 0.3s ease;
+            color:white;
         }
 
         /* Estilos para la Descripción (Textarea) */
@@ -241,13 +245,14 @@
             resize: vertical; /* Permite al usuario ajustar el tamaño verticalmente */
             box-sizing: border-box;
             transition: border-color 0.3s ease;
+            color:white;
         }
 
         /* Cambia el color de la línea al enfocar el campo */
-        .campo input:focus,
-        .campo textarea:focus {
-            border-bottom-color: #4a90e2; 
-        }
+        // .campo input:focus,
+        // .campo textarea:focus {
+
+        // }
         }
     }
 }
