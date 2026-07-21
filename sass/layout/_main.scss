@@ -154,6 +154,7 @@
         .contacto{
             padding-bottom: 10px;
             padding-top:40px ;
+            position: relative;
             h3{
                 font-size: 40px;
                 margin-bottom: 7px;
@@ -196,13 +197,14 @@
             .linea{
                 padding: 0;
                 margin-left: 0;
+                // background-color:red;
             }
             p:last-child {
                     text-align: right;
                     padding-right:0;
-                    padding-top: 20px;
+                    padding-top: 10px;
                     padding-right:20px;
-                    padding-bottom: 40px;
+                    padding-bottom: 80px;
                 }
         }
 
@@ -253,6 +255,51 @@
         // .campo textarea:focus {
 
         // }
+        .oval{
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                overflow: visible;
+                bottom:0px;
+                right: 130px;
+                z-index: 0;
+                stroke-width: 1px;
+                stroke:v.$gray_2;
+                &__1{
+                    position: absolute;
+                    bottom:240px;
+                    right: 50px;
+                }
+                &__2{
+                    position: absolute;
+                    bottom:230px;
+                    right: 50px;
+                }
+                &__3{
+                    position: absolute;
+                    bottom:220px;
+                    right: 50px;
+                }
+                &__4{
+                    position: absolute;
+                    bottom:210px;
+                    right: 50px;
+                }
+                &__5{
+                    position: absolute;
+                    bottom:200px;
+                    right: 50px;
+                }
+
+            }
+            .linea__final{
+                width: 95%;
+                // height: 1%;
+                // margin: 0 auto;
+                border-top: 1.5px solid v.$white;
+                // border-bottom: 4px solid v.$white;
+                margin-bottom: 40px;
+            }
         }
     }
 }
