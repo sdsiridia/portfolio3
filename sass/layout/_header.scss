@@ -13,11 +13,26 @@
         .encabezado{
             position: relative;
             background-image: linear-gradient(to top, v.$gradient-start, v.$gradient-end);
+            @include m.breakpoint(tablet){
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-image: none;
+                padding: 30px;
+
+                }
             h2{
                 color: v.$white;
                 text-align: center;
+                @include m.breakpoint(tablet){
+                    font-size: 32px;
+                }
             }
             .adam{
+                @include m.breakpoint(tablet){
+                    display: none;
+                }
                 .adam__img{
                     position: relative;
                     z-index: 10;
@@ -33,6 +48,13 @@
                 z-index: 0;
                 stroke-width: 2px;
                 stroke:v.$gray;
+                @include m.breakpoint(tablet){
+                    left: 0px;
+                    // right: 0;
+                    &__2,&__3,&__4,&__5 {
+                        left: 0;
+                    }
+                }
                 &__2{
                     position: absolute;
                     top:12px;
@@ -63,6 +85,44 @@
                 right: -185px;
             }
         }
+        .presentacion{
+            @include m.breakpoint(tablet){
+                display: flex;
+                width: 100%;
+                // position: relative;
+                &__tablet{
+                    // position: absolute;
+                    left: 0px;
+                    flex: 0 0 50%;
+                    width: 50%;
+                    white-space: nowrap; /* Evita que el texto salte de línea */
+                    position: relative;  /* Permite usar z-index */
+                    z-index: 10;   
+                }
+
+            }
+            .adam__tablet{
+                    display: none;
+                    @include m.breakpoint(tablet){
+                        display: block;
+                        padding: 0;
+                        margin: 0;
+                        // padding-top: 40px;
+                        flex: 0 0 50%;
+                        width: 50%;
+                        background-image: linear-gradient(to top, v.$gradient-start, v.$gradient-end);
+                        &__img{
+                            width: 100%;
+                        }
+                    }
+                }
+        }
+        @include m.breakpoint(tablet){
+                    display: flex;
+                    flex-direction: column; /* Coloca los elementos uno abajo del otro */
+                    align-items: flex-end; 
+                    padding: 0;
+                }
     }
     .navbar{
         ul{
@@ -86,13 +146,24 @@
         padding: 49px 0px 0px 0px;
     }
     .description{
-
+        // @include m.breakpoint(tablet){
+        //     position: relative;
+        // }
         h1{
             margin-top: 40px;
             font-size:40px;
             margin-bottom: 0px;
             padding-bottom: 0px;
             text-align: center;
+            @include m.breakpoint(tablet){
+                // position: absolute;
+                font-size: 72px;
+                padding: 0 0 0 16px;
+                text-align: left;
+                .br1,.br2,.br3{
+                    display: block;
+                }
+                }
         }
         .texto-subrayado {
                 position: relative;
@@ -140,4 +211,8 @@
                 height: 3px; 
                 background-color: v.$green; 
         }
+    @include m.breakpoint(tablet){
+                margin: 0;
+                padding: 0;
+                }
 }
