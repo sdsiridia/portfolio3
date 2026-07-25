@@ -92,9 +92,10 @@
                 // position: relative;
                 &__tablet{
                     // position: absolute;
-                    left: 0px;
-                    flex: 0 0 50%;
-                    width: 50%;
+                    // left: 0px;
+                    padding-left: 32px;
+                    flex: 0 0 60%;
+                    width: 60%;
                     white-space: nowrap; /* Evita que el texto salte de línea */
                     position: relative;  /* Permite usar z-index */
                     z-index: 10;   
@@ -108,10 +109,11 @@
                         padding: 0;
                         margin: 0;
                         // padding-top: 40px;
-                        flex: 0 0 50%;
-                        width: 50%;
-                        background-image: linear-gradient(to top, v.$gradient-start, v.$gradient-end);
+                        flex: 0 0 40%;
+                        width: 40%;
                         &__img{
+                            padding-top: 40px;
+                            background-image: linear-gradient(to top, v.$gradient-start, v.$gradient-end);
                             width: 100%;
                         }
                     }
@@ -157,11 +159,12 @@
             text-align: center;
             @include m.breakpoint(tablet){
                 // position: absolute;
-                font-size: 72px;
+                font-size: 68px;
                 padding: 0 0 0 16px;
                 text-align: left;
                 .br1,.br2,.br3{
                     display: block;
+                    line-height: 1.1;
                 }
                 }
         }
@@ -188,6 +191,13 @@
         color:v.$gray_3;
         padding: 0px 16px;
         text-align: center;
+        @include m.breakpoint(tablet){
+            text-align: left;
+            font-size: 18px;
+            .br1,.br2,.br3{
+                    display: block;
+                }
+        }
     }
     .button{
         a{
