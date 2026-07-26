@@ -7,10 +7,11 @@ footer{
     justify-content: center;
     align-items: center;
     background-color: v.$gray;
-            // width: calc(100% + 32px);
-            // margin: 0 -16px;
-            // padding: 0 16px;
-            // box-sizing: border-box;
+    @include m.breakpoint(tablet){
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
     .navbar{
 
         ul{
