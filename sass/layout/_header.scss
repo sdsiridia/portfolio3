@@ -109,9 +109,8 @@
                     white-space: nowrap; /* Evita que el texto salte de línea */
                     position: relative;  /* Permite usar z-index */
                     z-index: 10;   
+                    }
                 }
-
-            }
             .adam__tablet{
                     display: none;
                     @include m.breakpoint(tablet){
@@ -137,13 +136,12 @@
                             // stroke-width: 7px;
                             stroke: v.$white;
                             z-index: 100;
-                            left: 0;
-                            bottom: 0;
-                            width: 200px;
+                            left: 240px;
+                            bottom: 47px;
+                            width: 130px;
                             height: auto;
                         }
                     }
-
                 }
         }
         @include m.breakpoint(tablet){
