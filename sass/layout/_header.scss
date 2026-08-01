@@ -123,9 +123,9 @@
                         width: 40%;
                         &__img{
                             padding-top: 40px;
-                            background-image: linear-gradient(to top, v.$gradient-start, v.$gradient-end);
                             width: 100%;
                             display: block;
+                            background-image: linear-gradient(to top, v.$gradient-start, v.$gradient-end);
                         }
                     }
                     .circulo__tablet{
@@ -160,6 +160,12 @@
             flex-direction: row;
             gap:23px;
             margin-top: 16px;
+            @include m.breakpoint(tablet){
+                li a img{
+                    width: 24px;
+                    
+                }
+            }
         }
         // a{
         //     @include m.button();

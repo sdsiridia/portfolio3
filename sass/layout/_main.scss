@@ -16,7 +16,11 @@
                 // border-bottom: 4px solid v.$white;
                 margin-bottom: 40px;
             }
-        
+        .linea_tablet{
+            @include m.breakpoint(tablet){
+                    display: none;
+                }
+            }
         .articulos{
             .articulo{
                 padding: 16px;
@@ -58,29 +62,29 @@
                 stroke: v.$gray_2;
                 transform: rotate(180deg);
                 &__1{
-                    top:-12px;
+                    bottom:430px;
                     position: absolute;
-                    left: -110px;
+                    left: 30px;
                 }
                 &__2{
                     position: absolute;
-                    top:-26px;
-                    left: -110px;
+                    bottom:418px;
+                    left: 30px;
                 }
                 &__3{
                     position: absolute;
-                    top:-38px;
-                    left: -110px;
+                    bottom:406px;
+                    left: 30px;
                 }
                 &__4{
                     position: absolute;
-                    top:-52px;
-                    left: -110px;
+                    bottom:394px;
+                    left: 30px;
                 }
                 &__5{
                     position: absolute;
-                    top: -68px;
-                    left: -110px;
+                    bottom: 382px;
+                    left: 30px;
                 }
 
             }
@@ -309,8 +313,8 @@
                 margin: 0;
                 padding: 0;
                 overflow: visible;
-                bottom:0px;
-                right: 130px;
+                bottom:-120px;
+                right: 470px;
                 z-index: 0;
                 stroke-width: 1px;
                 stroke:v.$gray_2;
@@ -321,22 +325,22 @@
                 }
                 &__2{
                     position: absolute;
-                    bottom:230px;
+                    bottom:228px;
                     right: 50px;
                 }
                 &__3{
                     position: absolute;
-                    bottom:220px;
+                    bottom:216px;
                     right: 50px;
                 }
                 &__4{
                     position: absolute;
-                    bottom:210px;
+                    bottom:204px;
                     right: 50px;
                 }
                 &__5{
                     position: absolute;
-                    bottom:200px;
+                    bottom:192px;
                     right: 50px;
                 }
 
