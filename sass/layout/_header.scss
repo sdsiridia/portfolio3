@@ -10,6 +10,13 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        @include m.breakpoint(desktop){
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            // padding: 0px 195px;
+            margin-bottom: 115px;
+        }
         .encabezado{
             position: relative;
             background-image: linear-gradient(to top, v.$gradient-start, v.$gradient-end);
@@ -20,7 +27,9 @@
                 justify-content: space-between;
                 background-image: none;
                 padding: 30px;
-
+                }
+                @include m.breakpoint(desktop){
+                padding: 0px 195px;
                 }
             h2{
                 color: v.$white;
@@ -111,6 +120,9 @@
                     z-index: 10;   
                     }
                 }
+                @include m.breakpoint(desktop){
+                padding-left: 150px;
+                }
             .adam__tablet{
                     display: none;
                     @include m.breakpoint(tablet){
@@ -128,6 +140,11 @@
                             background-image: linear-gradient(to top, v.$gradient-start, v.$gradient-end);
                         }
                     }
+                    @include m.breakpoint(desktop){
+                        &__img{
+                            width: 350px;
+                        }
+                    }
                     .circulo__tablet{
                         display:none;
                         @include m.breakpoint(tablet){
@@ -141,6 +158,11 @@
                             width: 130px;
                             height: auto;
                         }
+                        @include m.breakpoint(desktop){
+                            left: -50px;
+                            width: 90px;
+                            bottom: 90px;
+                            }
                     }
                 }
         }
