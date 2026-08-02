@@ -64,6 +64,9 @@
                         left: 0;
                     }
                 }
+                @include m.breakpoint(desktop){
+                    display: none;
+                }
                 &__2{
                     position: absolute;
                     top:12px;
@@ -85,6 +88,60 @@
                     right: 0px;
                 }
 
+            }
+            .oval__desktop{
+                display: none;
+                @include m.breakpoint(desktop){
+                    display: block;
+                    position: absolute;
+                    margin: 0;
+                    padding: 0;
+                    overflow: visible;
+                    top:50px;
+                    left: 10px;
+                    z-index: 10;
+                    stroke-width: 0.7px;
+                    stroke:v.$gray_2;
+                    &__1{
+                    position: absolute;
+                    width: 400px;
+                    // top: 60px;
+                    // right: 80px;
+                    z-index: 100;
+                    }
+                    &__2{
+                    position: absolute;
+                    width: 400px;
+                    stroke:v.$gray_2;
+                    top: 12px;
+                    // left: 80px;
+                    z-index: 100;
+                    }
+                    &__3{
+                    position: absolute;
+                    width: 400px;
+                    stroke:v.$gray_2;
+                    top: 24px;
+                    // left: 80px;
+                    z-index: 100;
+                    }
+                    &__4{
+                    position: absolute;
+                    width: 400px;
+                    stroke:v.$gray_2;
+                    top: 36px;
+                    // left: 80px;
+                    z-index: 100;
+                    }
+                    &__5{
+                    position: absolute;
+                    width: 400px;
+                    stroke:v.$gray_2;
+                    top: 48px;
+                    // left: 80px;
+                    z-index: 100;
+                    } 
+                }
             }
             .circulo{
                 position: absolute;
@@ -122,6 +179,7 @@
                 }
                 @include m.breakpoint(desktop){
                 padding-left: 150px;
+                
                 }
             .adam__tablet{
                     display: none;
@@ -142,7 +200,7 @@
                     }
                     @include m.breakpoint(desktop){
                         &__img{
-                            width: 350px;
+                            display: none;
                         }
                     }
                     .circulo__tablet{
@@ -159,12 +217,24 @@
                             height: auto;
                         }
                         @include m.breakpoint(desktop){
-                            left: -50px;
+                            left: -100px;
                             width: 90px;
-                            bottom: 90px;
+                            bottom: 40px;
                             }
                     }
                 }
+            .adam__desktop__img{
+                display: none;
+                @include m.breakpoint(desktop){
+                    display: block;
+                    position: absolute;
+                    width: 400px;
+                    top: -60px;
+                    right: 80px;
+                    z-index: 1;
+                    padding-top: 0px;
+                }
+            }
         }
         @include m.breakpoint(tablet){
                     display: flex;
@@ -182,9 +252,11 @@
             flex-direction: row;
             gap:23px;
             margin-top: 16px;
-            @include m.breakpoint(tablet){
+            @include m.breakpoint(desktop){
                 li a img{
                     width: 24px;
+                    position: relative;
+                    z-index: 10;
                     
                 }
             }
