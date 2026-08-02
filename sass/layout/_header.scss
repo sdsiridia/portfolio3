@@ -1,157 +1,187 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/mixins" as m;
 
-.header{
+.header {
     background-color: v.$black;
     font-family: v.$primary-font;
-    .container{
+
+    .container {
         padding: 16px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        @include m.breakpoint(desktop){
+
+        @include m.breakpoint(desktop) {
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
             // padding: 0px 195px;
             margin-bottom: 115px;
         }
-        .encabezado{
+
+        .encabezado {
             position: relative;
             background-image: linear-gradient(to top, v.$gradient-start, v.$gradient-end);
-            @include m.breakpoint(tablet){
+
+            @include m.breakpoint(tablet) {
                 width: 100%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 background-image: none;
                 padding: 30px;
-                }
-                @include m.breakpoint(desktop){
+            }
+
+            @include m.breakpoint(desktop) {
                 padding: 0px 195px;
-                }
-            h2{
+            }
+
+            h2 {
                 color: v.$white;
                 text-align: center;
-                @include m.breakpoint(tablet){
+
+                @include m.breakpoint(tablet) {
                     font-size: 32px;
                 }
             }
-            .adam{
-                @include m.breakpoint(tablet){
+
+            .adam {
+                @include m.breakpoint(tablet) {
                     display: none;
                 }
-                .adam__img{
+
+                .adam__img {
                     position: relative;
                     z-index: 10;
                 }
             }
-            .oval{
+
+            .oval {
                 position: absolute;
                 margin: 0;
                 padding: 0;
                 overflow: visible;
-                top:100px;
+                top: 100px;
                 right: 100px;
                 z-index: 0;
                 stroke-width: 2px;
-                stroke:v.$gray;
-                @include m.breakpoint(tablet){
+                stroke: v.$gray;
+
+                @include m.breakpoint(tablet) {
                     left: 0px;
+
                     // right: 0;
-                    &__2,&__3,&__4,&__5 {
+                    &__2,
+                    &__3,
+                    &__4,
+                    &__5 {
                         left: 0;
                     }
                 }
-                @include m.breakpoint(desktop){
+
+                @include m.breakpoint(desktop) {
                     display: none;
                 }
-                &__2{
+
+                &__2 {
                     position: absolute;
-                    top:12px;
+                    top: 12px;
                     right: 0px;
                 }
-                &__3{
+
+                &__3 {
                     position: absolute;
-                    top:24px;
+                    top: 24px;
                     right: 0px;
                 }
-                &__4{
+
+                &__4 {
                     position: absolute;
-                    top:36px;
+                    top: 36px;
                     right: 0px;
                 }
-                &__5{
+
+                &__5 {
                     position: absolute;
-                    top:48px;
+                    top: 48px;
                     right: 0px;
                 }
 
             }
-            .oval__desktop{
+
+            .oval__desktop {
                 display: none;
-                @include m.breakpoint(desktop){
+
+                @include m.breakpoint(desktop) {
                     display: block;
                     position: absolute;
                     margin: 0;
                     padding: 0;
                     overflow: visible;
-                    top:50px;
+                    top: 50px;
                     left: 10px;
                     z-index: 10;
                     stroke-width: 0.7px;
-                    stroke:v.$gray_2;
-                    &__1{
-                    position: absolute;
-                    width: 400px;
-                    // top: 60px;
-                    // right: 80px;
-                    z-index: 100;
+                    stroke: v.$gray_2;
+
+                    &__1 {
+                        position: absolute;
+                        width: 400px;
+                        // top: 60px;
+                        // right: 80px;
+                        z-index: 100;
                     }
-                    &__2{
-                    position: absolute;
-                    width: 400px;
-                    stroke:v.$gray_2;
-                    top: 12px;
-                    // left: 80px;
-                    z-index: 100;
+
+                    &__2 {
+                        position: absolute;
+                        width: 400px;
+                        stroke: v.$gray_2;
+                        top: 12px;
+                        // left: 80px;
+                        z-index: 100;
                     }
-                    &__3{
-                    position: absolute;
-                    width: 400px;
-                    stroke:v.$gray_2;
-                    top: 24px;
-                    // left: 80px;
-                    z-index: 100;
+
+                    &__3 {
+                        position: absolute;
+                        width: 400px;
+                        stroke: v.$gray_2;
+                        top: 24px;
+                        // left: 80px;
+                        z-index: 100;
                     }
-                    &__4{
-                    position: absolute;
-                    width: 400px;
-                    stroke:v.$gray_2;
-                    top: 36px;
-                    // left: 80px;
-                    z-index: 100;
+
+                    &__4 {
+                        position: absolute;
+                        width: 400px;
+                        stroke: v.$gray_2;
+                        top: 36px;
+                        // left: 80px;
+                        z-index: 100;
                     }
-                    &__5{
-                    position: absolute;
-                    width: 400px;
-                    stroke:v.$gray_2;
-                    top: 48px;
-                    // left: 80px;
-                    z-index: 100;
-                    } 
+
+                    &__5 {
+                        position: absolute;
+                        width: 400px;
+                        stroke: v.$gray_2;
+                        top: 48px;
+                        // left: 80px;
+                        z-index: 100;
+                    }
                 }
             }
-            .circulo{
+
+            .circulo {
                 position: absolute;
                 width: 130px;
                 stroke-width: .7px;
-                top:230px;
+                top: 230px;
                 right: -185px;
-                @include m.breakpoint(tablet){
+
+                @include m.breakpoint(tablet) {
                     display: none;
                 }
+
                 //     // left: 0;
                 //     right: 0%;
                 //     top: 80%;
@@ -161,81 +191,98 @@
                 // }
             }
         }
-        .presentacion{
-            @include m.breakpoint(tablet){
+
+        .presentacion {
+            @include m.breakpoint(tablet) {
                 display: flex;
                 width: 100%;
+
                 // position: relative;
-                &__tablet{
+                &__tablet {
                     // position: absolute;
                     // left: 0px;
                     padding-left: 32px;
                     flex: 0 0 60%;
                     width: 60%;
-                    white-space: nowrap; /* Evita que el texto salte de línea */
-                    position: relative;  /* Permite usar z-index */
-                    z-index: 10;   
-                    }
-                &__desktop{
-                    display:none;
+                    white-space: nowrap;
+                    /* Evita que el texto salte de línea */
+                    position: relative;
+                    /* Permite usar z-index */
+                    z-index: 10;
                 }
-                }
-                @include m.breakpoint(desktop){
-                padding-left: 150px;
-                &__tablet{
+
+                &__desktop {
                     display: none;
                 }
-                &__desktop{
-                    display:block;
+            }
+
+            @include m.breakpoint(desktop) {
+                padding-left: 150px;
+
+                &__tablet {
+                    display: none;
+                }
+
+                &__desktop {
+                    display: block;
                     flex: 0 0 70%;
                     width: 60%;
                 }
-                }
-            .adam__tablet{
-                    display: none;
-                    @include m.breakpoint(tablet){
-                        display: block;
-                        padding: 0;
-                        margin: 0;
-                        position: relative;
-                        // padding-top: 40px;
-                        flex: 0 0 40%;
-                        width: 40%;
-                        &__img{
-                            padding-top: 40px;
-                            width: 100%;
-                            display: block;
-                            background-image: linear-gradient(to top, v.$gradient-start, v.$gradient-end);
-                        }
-                    }
-                    @include m.breakpoint(desktop){
-                        &__img{
-                            display: none;
-                        }
-                    }
-                    .circulo__tablet{
-                        display:none;
-                        @include m.breakpoint(tablet){
-                            display: block;
-                            position: absolute;
-                            // stroke-width: 7px;
-                            stroke: v.$white;
-                            z-index: 100;
-                            left: 240px;
-                            bottom: 47px;
-                            width: 130px;
-                            height: auto;
-                        }
-                        @include m.breakpoint(desktop){
-                            left: -100px;
-                            width: 90px;
-                            bottom: 130px;
-                            }
-                    }
-                }
-            .adam__desktop__img{
+            }
+
+            .adam__tablet {
                 display: none;
-                @include m.breakpoint(desktop){
+
+                @include m.breakpoint(tablet) {
+                    display: block;
+                    padding: 0;
+                    margin: 0;
+                    position: relative;
+                    // padding-top: 40px;
+                    flex: 0 0 40%;
+                    width: 40%;
+
+                    &__img {
+                        padding-top: 40px;
+                        width: 100%;
+                        display: block;
+                        background-image: linear-gradient(to top, v.$gradient-start, v.$gradient-end);
+                    }
+                }
+
+                @include m.breakpoint(desktop) {
+                    &__img {
+                        display: none;
+                    }
+                }
+
+                .circulo__tablet {
+                    display: none;
+
+                    @include m.breakpoint(tablet) {
+                        display: block;
+                        position: absolute;
+                        // stroke-width: 7px;
+                        stroke: v.$white;
+                        z-index: 100;
+                        left: 240px;
+                        bottom: 47px;
+                        width: 130px;
+                        height: auto;
+                    }
+
+                    @include m.breakpoint(desktop) {
+                        left: -100px;
+                        width: 90px;
+                        bottom: 130px;
+                    }
+                }
+            }
+
+            .adam__desktop__img {
+                display: none;
+
+                @include m.breakpoint(desktop) {
                     display: block;
                     position: absolute;
                     width: 400px;
@@ -247,31 +294,36 @@
                 }
             }
         }
-        @include m.breakpoint(tablet){
-                    display: flex;
-                    flex-direction: column; /* Coloca los elementos uno abajo del otro */
-                    align-items: flex-end; 
-                    padding: 0;
-                }
+
+        @include m.breakpoint(tablet) {
+            display: flex;
+            flex-direction: column;
+            /* Coloca los elementos uno abajo del otro */
+            align-items: flex-end;
+            padding: 0;
+        }
     }
-    .navbar{
-        ul{
+
+    .navbar {
+        ul {
             @include m.reset_list();
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-direction: row;
-            gap:23px;
+            gap: 23px;
             margin-top: 16px;
-            @include m.breakpoint(desktop){
-                li a img{
+
+            @include m.breakpoint(desktop) {
+                li a img {
                     width: 24px;
                     position: relative;
                     z-index: 10;
-                    
+
                 }
             }
         }
+
         // a{
         //     @include m.button();
         //     color: v.$white;
@@ -280,30 +332,38 @@
         //     }
         // }
     }
-    .adam{
+
+    .adam {
         padding: 49px 0px 0px 0px;
     }
-    .description{
+
+    .description {
+
         // @include m.breakpoint(tablet){
         //     position: relative;
         // }
-        h1{
+        h1 {
             margin-top: 40px;
-            font-size:40px;
+            font-size: 40px;
             margin-bottom: 0px;
             padding-bottom: 0px;
             text-align: center;
-            @include m.breakpoint(tablet){
+
+            @include m.breakpoint(tablet) {
                 // position: absolute;
                 font-size: 68px;
                 padding: 0 0 0 16px;
                 text-align: left;
-                .br1,.br2,.br3{
+
+                .br1,
+                .br2,
+                .br3 {
                     display: block;
                     line-height: 1.1;
                 }
-                }
-            @include m.breakpoint(desktop){
+            }
+
+            @include m.breakpoint(desktop) {
                 margin-top: 80px;
                 font-size: 75px;
                 padding: 0 0 0 16px;
@@ -313,39 +373,46 @@
                 // }
             }
         }
+
         .texto-subrayado {
-                position: relative;
-                display: inline-block;
-                margin-bottom: 40px;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 40px;
         }
 
         .texto-subrayado::after {
-                content: '';
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 100%; 
-                height: 3px; 
-                background-color: v.$green; 
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 3px;
+            background-color: v.$green;
         }
     }
-    p{
+
+    p {
         font-size: 16px;
         line-height: 1.6;
         margin-bottom: 40px;
-        color:v.$gray_3;
+        color: v.$gray_3;
         padding: 0px 16px;
         text-align: center;
-        @include m.breakpoint(tablet){
+
+        @include m.breakpoint(tablet) {
             text-align: left;
             font-size: 18px;
-            .br1,.br2,.br3{
-                    display: block;
-                }
+
+            .br1,
+            .br2,
+            .br3 {
+                display: block;
+            }
         }
     }
-    .button{
-        a{
+
+    .button {
+        a {
             font-size: 16px;
             position: relative;
             display: inline-block;
@@ -356,18 +423,20 @@
             letter-spacing: 2.59px;
 
         }
-        }
+    }
+
     .button a::after {
-                content: '';
-                position: absolute;
-                left: 0;
-                bottom: -10px;
-                width: 100%; 
-                height: 3px; 
-                background-color: v.$green; 
-        }
-    @include m.breakpoint(tablet){
-                margin: 0;
-                padding: 0;
-                }
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 100%;
+        height: 3px;
+        background-color: v.$green;
+    }
+
+    @include m.breakpoint(tablet) {
+        margin: 0;
+        padding: 0;
+    }
 }
