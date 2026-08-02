@@ -176,10 +176,20 @@
                     position: relative;  /* Permite usar z-index */
                     z-index: 10;   
                     }
+                &__desktop{
+                    display:none;
+                }
                 }
                 @include m.breakpoint(desktop){
                 padding-left: 150px;
-                
+                &__tablet{
+                    display: none;
+                }
+                &__desktop{
+                    display:block;
+                    flex: 0 0 70%;
+                    width: 60%;
+                }
                 }
             .adam__tablet{
                     display: none;
@@ -219,7 +229,7 @@
                         @include m.breakpoint(desktop){
                             left: -100px;
                             width: 90px;
-                            bottom: 40px;
+                            bottom: 130px;
                             }
                     }
                 }
@@ -233,6 +243,7 @@
                     right: 80px;
                     z-index: 1;
                     padding-top: 0px;
+                    padding-right: 80px;
                 }
             }
         }
@@ -292,6 +303,15 @@
                     line-height: 1.1;
                 }
                 }
+            @include m.breakpoint(desktop){
+                margin-top: 80px;
+                font-size: 75px;
+                padding: 0 0 0 16px;
+                text-align: left;
+                // .br1,.br2,.br3{
+                //     // line-height: 1.1;
+                // }
+            }
         }
         .texto-subrayado {
                 position: relative;
