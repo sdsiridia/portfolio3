@@ -88,38 +88,39 @@
                 // top:100px;
                 // right: 100px;
 
-                stroke-width: 1px;
+                stroke-width: 1.2px;
                 stroke: v.$gray_2;
                 transform: rotate(180deg);
+                margin-bottom: 40px;
 
                 &__1 {
-                    bottom: 430px;
+                    bottom: -100px;
                     position: absolute;
-                    left: 30px;
+                    right: 800px;
                 }
 
                 &__2 {
                     position: absolute;
-                    bottom: 418px;
-                    left: 30px;
+                    bottom: -90px;
+                    right: 800px;
                 }
 
                 &__3 {
                     position: absolute;
-                    bottom: 406px;
-                    left: 30px;
+                    bottom: -80px;
+                    right: 800px;
                 }
 
                 &__4 {
                     position: absolute;
-                    bottom: 394px;
-                    left: 30px;
+                    bottom: -70px;
+                    right: 800px;
                 }
 
                 &__5 {
                     position: absolute;
-                    bottom: 382px;
-                    left: 30px;
+                    bottom: -60px;
+                    right: 800px;
                 }
 
             }
