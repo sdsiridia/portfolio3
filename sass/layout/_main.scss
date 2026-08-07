@@ -96,81 +96,106 @@
                     top: -12px;
                     position: absolute;
                     left: -250px;
+
+                    @include m.breakpoint(desktop) {
+                        top: 25px;
+                        left: -900px;
+                    }
                 }
 
                 &__2 {
                     position: absolute;
                     top: -26px;
                     left: -250px;
+
+                    @include m.breakpoint(desktop) {
+                        top: 15px;
+                        left: -900px;
+                    }
                 }
 
                 &__3 {
                     position: absolute;
                     top: -38px;
                     left: -250px;
+
+                    @include m.breakpoint(desktop) {
+                        top: 5px;
+                        left: -900px;
+                    }
                 }
 
                 &__4 {
                     position: absolute;
                     top: -52px;
                     left: -250px;
+
+                    @include m.breakpoint(desktop) {
+                        top: -5px;
+                        left: -900px;
+                    }
                 }
 
                 &__5 {
                     position: absolute;
                     top: -68px;
                     left: -250px;
+
+                    @include m.breakpoint(desktop) {
+                        top: -15px;
+                        left: -900px;
+                    }
                 }
 
             }
 
-            @include m.breakpoint(desktop) {
-                .oval {
-                    // position: absolute;
-                    margin: 0;
-                    padding: 0;
-                    overflow: visible;
-                    // width: 300px;
-                    // top:100px;
-                    // right: 100px;
+            // @include m.breakpoint(desktop) {
+            //     .oval {
+            //         // position: absolute;
+            //         margin: 0;
+            //         padding: 0;
+            //         overflow: visible;
+            //         // width: 300px;
+            //         // top:100px;
+            //         // right: 100px;
 
-                    stroke-width: 1.2px;
-                    stroke: v.$gray_2;
-                    transform: rotate(180deg);
-                    margin-bottom: 40px;
+            //         stroke-width: 1.2px;
+            //         stroke: v.$gray_2;
+            //         // transform: rotate(180deg);
+            //         margin-bottom: 40px;
 
-                    &__1 {
-                        bottom: -100px;
-                        position: absolute;
-                        right: 800px;
-                    }
+            //         &__1 {
+            //             bottom: -100px;
+            //             position: absolute;
+            //             right: 0px;
+            //         }
 
-                    &__2 {
-                        position: absolute;
-                        bottom: -90px;
-                        right: 800px;
-                    }
+            //         &__2 {
+            //             position: absolute;
+            //             bottom: -90px;
+            //             right: 800px;
+            //         }
 
-                    &__3 {
-                        position: absolute;
-                        bottom: -80px;
-                        right: 800px;
-                    }
+            //         &__3 {
+            //             position: absolute;
+            //             bottom: -80px;
+            //             right: 800px;
+            //         }
 
-                    &__4 {
-                        position: absolute;
-                        bottom: -70px;
-                        right: 800px;
-                    }
+            //         &__4 {
+            //             position: absolute;
+            //             bottom: -70px;
+            //             right: 800px;
+            //         }
 
-                    &__5 {
-                        position: absolute;
-                        bottom: -60px;
-                        right: 800px;
-                    }
+            //         &__5 {
+            //             position: absolute;
+            //             bottom: -60px;
+            //             right: 800px;
+            //         }
 
-                }
-            }
+            //     }
+            // }
 
             @include m.breakpoint(tablet) {
                 display: grid;
