@@ -290,6 +290,10 @@
             // padding: 16px;
             padding-left: 60px;
 
+            @include m.breakpoint(desktop) {
+                padding-left: 170px;
+            }
+
             .titulo {
                 display: flex;
                 flex-direction: row;
@@ -321,7 +325,7 @@
             }
 
             @include m.breakpoint(desktop) {
-                padding-left: 40px;
+                padding-left: 170px;
             }
 
             .proyecto {
@@ -398,6 +402,7 @@
         .contacto {
             padding-bottom: 10px;
             padding-top: 40px;
+            margin-left: 170px;
             position: relative;
 
             h3 {
