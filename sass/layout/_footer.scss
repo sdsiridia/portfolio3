@@ -16,6 +16,7 @@ footer {
 
     @include m.breakpoint(desktop) {
         padding: 0 170px;
+        max-width: 1200px;
     }
 
     .navbar {
