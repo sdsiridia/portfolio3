@@ -177,6 +177,7 @@
                 stroke-width: .7px;
                 top: 230px;
                 right: -185px;
+                display: none;
 
                 @include m.breakpoint(tablet) {
                     display: none;
@@ -210,10 +211,10 @@
                     /* Permite usar z-index */
                     z-index: 10;
                 }
+            }
 
-                &__desktop {
-                    display: none;
-                }
+            &__desktop {
+                display: none;
             }
 
             @include m.breakpoint(desktop) {
