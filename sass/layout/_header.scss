@@ -177,7 +177,7 @@
                 stroke-width: .7px;
                 top: 230px;
                 right: -185px;
-                display: none;
+                // display: none;
 
                 @include m.breakpoint(tablet) {
                     display: none;
