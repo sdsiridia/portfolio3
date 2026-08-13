@@ -105,8 +105,8 @@
                     left: -250px;
 
                     @include m.breakpoint(desktop) {
-                        top: 25px;
-                        left: -900px;
+                        top: -130px;
+                        left: -1250px;
                     }
                 }
 
@@ -116,8 +116,8 @@
                     left: -250px;
 
                     @include m.breakpoint(desktop) {
-                        top: 15px;
-                        left: -900px;
+                        top: -142px;
+                        left: -1250px;
                     }
                 }
 
@@ -127,8 +127,8 @@
                     left: -250px;
 
                     @include m.breakpoint(desktop) {
-                        top: 5px;
-                        left: -900px;
+                        top: -154px;
+                        left: -1250px;
                     }
                 }
 
@@ -138,8 +138,8 @@
                     left: -250px;
 
                     @include m.breakpoint(desktop) {
-                        top: -5px;
-                        left: -900px;
+                        top: -166px;
+                        left: -1250px;
                     }
                 }
 
@@ -149,8 +149,8 @@
                     left: -250px;
 
                     @include m.breakpoint(desktop) {
-                        top: -15px;
-                        left: -900px;
+                        top: -178px;
+                        left: -1250px;
                     }
                 }
 
@@ -694,8 +694,8 @@
     background-color: v.$green;
 }
 
-.button_desktop a::after {
+.button_desktop {
     @include m.breakpoint(desktop) {
-        // background-color: transparent;
+        display: none;
     }
 }
