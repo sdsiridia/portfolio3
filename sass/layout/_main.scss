@@ -394,9 +394,10 @@
             box-sizing: border-box;
 
             @include m.breakpoint(desktop) {
-                max-width: none;
+                max-width: 1440px;
+                width: 100%;
                 margin: 0;
-                padding: 0;
+                padding: auto;
 
                 // width: 1200px;
                 // padding: 0px 195px;
