@@ -497,24 +497,42 @@
                 }
 
                 @include m.breakpoint(desktop) {
-                    width: min(100%, 400px);
-                    max-width: 100%;
-                    padding: 0;
-                    margin: 0;
+                    // position: relative;
+                    /* Base para el elemento absoluto */
+                    max-width: 1200px;
+                    /* Límite máximo de ancho */
+                    // width: 100%;
+                    /* Ocupa el 100% en pantallas pequeñas */
+                    margin: 0 auto;
+                    /* Centra el contenedor en pantallas grandes */
+                    // width: min(100%, 400px);
+                    // max-width: 100%;
+                    // padding: 0;
+                    // margin: 0;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
 
-                    .button {
-                        position: relative;
-                        margin: 0;
-                        width: fit-content;
-                        max-width: 100%;
+                    form {
+                        // position: relative;
+                        max-width: 420px;
 
-                        @include m.breakpoint(desktop) {
-                            right: -30px;
+                        .button {
+                            position: relative;
+                            top: auto;
+                            right: auto;
+                            left: auto;
+                            bottom: auto;
+                            // width: fit-content;
+                            // max-width: 1200px;
+                            /* Anclar el botón al lado derecho dentro del formulario sin desbordar */
+                            // align-self: flex-end;
+                            // right: 218px;
+                            // margin-right: 0;
+
                         }
                     }
+
                 }
 
                 .linea {
@@ -539,13 +557,10 @@
 
                     @include m.breakpoint(desktop) {
                         white-space: nowrap; // lo que hace que el texto se ponga en una sola linea
-                        // position: absolute;
-                        // right: 235px;
-                        //esto lo hereda por eso lo quito
-                        // text-align: left;
-                        // max-width: none;
-                        // width: auto;
-                        // display: inline-block;
+                        // position: relative;
+                        // top: 420px;
+                        // width: fit-content;
+
                     }
                 }
             }
