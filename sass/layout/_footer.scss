@@ -15,8 +15,14 @@ footer {
     }
 
     @include m.breakpoint(desktop) {
-        padding: 0 170px;
-        max-width: 1200px;
+        // padding: 0 170px;
+        // margin: auto;
+        // // max-width: 1200px;
+        // width: 100%;
+        max-width: 1440px;
+        width: 100vw;
+        margin: auto;
+        padding: auto;
     }
 
     .navbar {

@@ -13,7 +13,7 @@
         flex-direction: column;
 
         @include m.breakpoint(desktop) {
-            max-width: 1200px;
+            max-width: 1110px;
             margin-left: auto;
             margin-right: auto;
             // padding: 0px 195px;
@@ -218,7 +218,7 @@
             }
 
             @include m.breakpoint(desktop) {
-                padding-left: 150px;
+                // padding-left: 150px;
 
                 &__tablet {
                     display: none;

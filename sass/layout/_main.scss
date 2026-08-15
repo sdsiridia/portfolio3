@@ -156,54 +156,6 @@
 
             }
 
-            // @include m.breakpoint(desktop) {
-            //     .oval {
-            //         // position: absolute;
-            //         margin: 0;
-            //         padding: 0;
-            //         overflow: visible;
-            //         // width: 300px;
-            //         // top:100px;
-            //         // right: 100px;
-
-            //         stroke-width: 1.2px;
-            //         stroke: v.$gray_2;
-            //         // transform: rotate(180deg);
-            //         margin-bottom: 40px;
-
-            //         &__1 {
-            //             bottom: -100px;
-            //             position: absolute;
-            //             right: 0px;
-            //         }
-
-            //         &__2 {
-            //             position: absolute;
-            //             bottom: -90px;
-            //             right: 800px;
-            //         }
-
-            //         &__3 {
-            //             position: absolute;
-            //             bottom: -80px;
-            //             right: 800px;
-            //         }
-
-            //         &__4 {
-            //             position: absolute;
-            //             bottom: -70px;
-            //             right: 800px;
-            //         }
-
-            //         &__5 {
-            //             position: absolute;
-            //             bottom: -60px;
-            //             right: 800px;
-            //         }
-
-            //     }
-            // }
-
             @include m.breakpoint(tablet) {
                 display: grid;
                 gap: 20px;
@@ -245,13 +197,13 @@
             @include m.breakpoint(desktop) {
                 display: grid;
                 gap: 10px;
-                padding: 0 16px 0 170px;
-                margin: 0 auto;
+                padding: 0;
+                margin: 0;
                 grid-template-columns: 1fr 1fr 1fr;
                 justify-content: start;
                 width: 100%;
                 align-items: center;
-                max-width: 1200px;
+                max-width: 1110px;
                 // padding-left: 170px;
                 box-sizing: border-box;
                 grid-template-areas:
@@ -295,7 +247,8 @@
             padding-left: 60px;
 
             @include m.breakpoint(desktop) {
-                padding-left: 170px;
+                padding-left: 16px;
+                max-width: 1110px;
             }
 
             .titulo {
@@ -329,7 +282,7 @@
             }
 
             @include m.breakpoint(desktop) {
-                padding-left: 170px;
+                max-width: 1110px;
             }
 
             .proyecto {
@@ -394,14 +347,13 @@
             box-sizing: border-box;
 
             @include m.breakpoint(desktop) {
+                /* Limitar el fondo y el contenedor a 1440px y centrar en pantalla */
+                position: relative;
+                width: 100%;
                 max-width: 1440px;
-                width: 100vw;
-                margin: 0;
-                padding: auto;
-
-                // width: 1200px;
-                // padding: 0px 195px;
-                // margin-bottom: 115px;
+                margin: 0 auto;
+                padding: 0 16px;
+                box-sizing: border-box;
             }
         }
 
@@ -497,6 +449,7 @@
                 }
 
                 @include m.breakpoint(desktop) {
+                    padding-left: auto;
                     // position: relative;
                     /* Base para el elemento absoluto */
                     max-width: 1200px;
