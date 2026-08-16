@@ -363,6 +363,35 @@
                     margin-top: 20px;
                     margin-bottom: 40px;
                 }
+
+                @include m.breakpoint(desktop) {
+                    position: relative;
+
+                    .link {
+                        position: absolute;
+                        top: 0;
+                        right: 16px;
+                        left: 16px;
+                        aspect-ratio: 686 / 506;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 48px;
+                        margin: 0;
+                        background-color: rgba(0, 0, 0, 0.75);
+                        opacity: 0;
+                        transition: opacity 0.2s ease;
+                    }
+
+                    &:hover .link {
+                        opacity: 1;
+                    }
+
+                    &:hover .button_desktop {
+                        display: block;
+                    }
+                }
             }
         }
 
@@ -510,12 +539,18 @@
                             right: auto;
                             left: auto;
                             bottom: auto;
+
                             // width: fit-content;
                             // max-width: 1200px;
                             /* Anclar el botón al lado derecho dentro del formulario sin desbordar */
                             // align-self: flex-end;
                             // right: 218px;
                             // margin-right: 0;
+                            @include m.breakpoint(desktop) {
+                                :hover {
+                                    color: v.$green;
+                                }
+                            }
 
                         }
                     }
@@ -759,6 +794,12 @@
         color: v.$white;
         text-transform: uppercase;
         letter-spacing: 2.59px;
+    }
+
+    @include m.breakpoint(desktop) {
+        :hover {
+            color: v.$green;
+        }
     }
 }
 
