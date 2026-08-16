@@ -368,16 +368,15 @@
 
         .container__contacto {
             background-color: v.$gray;
-            width: 100%;
+            position: relative;
+            width: 100vw;
+            // left: 50%;
+            // transform: translateX(-50%);
             margin: 0;
             padding: 0;
             box-sizing: border-box;
 
             @include m.breakpoint(tablet) {
-                position: relative;
-                width: 100vw;
-                // left: 50%;
-                // transform: translateX(-50%);
                 margin: 0;
             }
 
@@ -627,8 +626,8 @@
 
                 svg {
                     display: block;
-                    width: 20px;
-                    height: 70px;
+                    // width: 20px;
+                    // height: 70px;
                     fill: none;
                     stroke: v.$gray_2;
                     stroke-width: 1px;
@@ -648,8 +647,8 @@
 
                 &__1 {
                     position: absolute;
-                    top: -18px;
-                    right: 0px;
+                    top: 30px;
+                    right: 40px;
 
                     @include m.breakpoint(tablet) {
                         top: 40px;
@@ -659,8 +658,8 @@
 
                 &__2 {
                     position: absolute;
-                    top: -20px;
-                    right: 0;
+                    top: 18px;
+                    right: 40px;
 
                     @include m.breakpoint(tablet) {
                         top: 52px;
@@ -675,8 +674,8 @@
 
                 &__3 {
                     position: absolute;
-                    top: -44px;
-                    right: 0;
+                    top: 6px;
+                    right: 40px;
 
                     @include m.breakpoint(tablet) {
                         top: 64px;
@@ -686,8 +685,8 @@
 
                 &__4 {
                     position: absolute;
-                    top: -56px;
-                    right: 0;
+                    top: -6px;
+                    right: 40px;
 
                     @include m.breakpoint(tablet) {
                         top: 78px;
@@ -697,8 +696,8 @@
 
                 &__5 {
                     position: absolute;
-                    top: -68px;
-                    right: 0;
+                    top: -18px;
+                    right: 40px;
 
                     @include m.breakpoint(tablet) {
                         top: 90px;
