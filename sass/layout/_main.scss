@@ -657,7 +657,7 @@
 
                     @include m.breakpoint(desktop) {
                         top: -20px;
-                        right: -120px;
+                        right: 0px;
                     }
                 }
 
@@ -673,7 +673,7 @@
 
                     @include m.breakpoint(desktop) {
                         top: -32px;
-                        right: -120px;
+                        right: 0px;
                     }
                 }
 
@@ -689,7 +689,7 @@
 
                     @include m.breakpoint(desktop) {
                         top: -44px;
-                        right: -120px;
+                        right: 0px;
                     }
                 }
 
@@ -705,7 +705,7 @@
 
                     @include m.breakpoint(desktop) {
                         top: -56px;
-                        right: -120px;
+                        right: 0px;
                     }
                 }
 
@@ -721,7 +721,7 @@
 
                     @include m.breakpoint(desktop) {
                         top: -68px;
-                        right: -120px;
+                        right: 0px;
                     }
                 }
             }
