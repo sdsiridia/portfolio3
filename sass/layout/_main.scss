@@ -340,7 +340,7 @@
         }
 
         .container__contacto {
-            // background-color: v.$gray;
+            background-color: v.$gray;
             width: 100%;
             margin: 0;
             padding: 0;
@@ -348,11 +348,13 @@
 
             @include m.breakpoint(desktop) {
                 position: relative;
-                // width: 100vw;
+                width: 100vw;
                 max-width: 1440px;
-                background-color: v.$gray;
+                left: 50%;
+                transform: translateX(-50%);
                 margin: 0;
                 padding: 0;
+                border: 0;
             }
         }
 
@@ -395,10 +397,9 @@
                 padding-top: 84px;
                 padding-bottom: 80px;
                 width: 100%;
-                // max-width: 1200px;
+                max-width: 1200px;
                 margin: 0 auto;
                 box-sizing: border-box;
-                margin-left: auto;
                 // gap: 40px;
             }
 

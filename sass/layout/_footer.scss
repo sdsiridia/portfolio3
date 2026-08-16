@@ -3,7 +3,10 @@
 
 footer {
     background-color: v.$gray;
+
     @include m.breakpoint(desktop) {
+        margin-top: 0;
+        padding-top: 0;
         max-width: 1440px;
         width: 100%;
         margin: 0 auto;
