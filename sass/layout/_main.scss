@@ -373,6 +373,14 @@
             padding: 0;
             box-sizing: border-box;
 
+            @include m.breakpoint(tablet) {
+                position: relative;
+                width: 100vw;
+                // left: 50%;
+                // transform: translateX(-50%);
+                margin: 0;
+            }
+
             @include m.breakpoint(desktop) {
                 position: relative;
                 width: 100vw;
@@ -601,14 +609,16 @@
                 position: absolute;
                 bottom: 230px;
                 right: 180px;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
+                // display: flex;
+                // flex-direction: column;
+                // align-items: flex-end;
                 // gap: -20px;
                 z-index: 10;
                 margin: 0;
                 padding: 0;
                 pointer-events: none;
+
+
 
                 @include m.breakpoint(desktop) {
                     bottom: 230px;
@@ -625,6 +635,11 @@
                     margin: 0;
                     padding: 0;
 
+                    @include m.breakpoint(tablet) {
+                        width: 500px;
+                        height: auto;
+                    }
+
                     @include m.breakpoint(desktop) {
                         width: 550px;
                         height: auto;
@@ -635,12 +650,22 @@
                     position: absolute;
                     top: -18px;
                     right: 0px;
+
+                    @include m.breakpoint(tablet) {
+                        top: 40px;
+                        right: 400px;
+                    }
                 }
 
                 &__2 {
                     position: absolute;
                     top: -20px;
                     right: 0;
+
+                    @include m.breakpoint(tablet) {
+                        top: 52px;
+                        right: 400px;
+                    }
 
                     @include m.breakpoint(desktop) {
                         top: -32px;
@@ -652,18 +677,33 @@
                     position: absolute;
                     top: -44px;
                     right: 0;
+
+                    @include m.breakpoint(tablet) {
+                        top: 64px;
+                        right: 400px;
+                    }
                 }
 
                 &__4 {
                     position: absolute;
                     top: -56px;
                     right: 0;
+
+                    @include m.breakpoint(tablet) {
+                        top: 78px;
+                        right: 400px;
+                    }
                 }
 
                 &__5 {
                     position: absolute;
                     top: -68px;
                     right: 0;
+
+                    @include m.breakpoint(tablet) {
+                        top: 90px;
+                        right: 400px;
+                    }
                 }
             }
 
