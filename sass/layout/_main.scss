@@ -639,10 +639,10 @@
                         height: auto;
                     }
 
-                    @include m.breakpoint(desktop) {
-                        width: 550px;
-                        height: auto;
-                    }
+                    // @include m.breakpoint(desktop) {
+                    //     width: 550px;
+                    //     height: auto;
+                    // }
                 }
 
                 &__1 {
@@ -653,6 +653,11 @@
                     @include m.breakpoint(tablet) {
                         top: 40px;
                         right: 400px;
+                    }
+
+                    @include m.breakpoint(desktop) {
+                        top: -20px;
+                        right: -120px;
                     }
                 }
 
@@ -668,7 +673,7 @@
 
                     @include m.breakpoint(desktop) {
                         top: -32px;
-                        right: 0;
+                        right: -120px;
                     }
                 }
 
@@ -681,6 +686,11 @@
                         top: 64px;
                         right: 400px;
                     }
+
+                    @include m.breakpoint(desktop) {
+                        top: -44px;
+                        right: -120px;
+                    }
                 }
 
                 &__4 {
@@ -692,6 +702,11 @@
                         top: 78px;
                         right: 400px;
                     }
+
+                    @include m.breakpoint(desktop) {
+                        top: -56px;
+                        right: -120px;
+                    }
                 }
 
                 &__5 {
@@ -702,6 +717,11 @@
                     @include m.breakpoint(tablet) {
                         top: 90px;
                         right: 400px;
+                    }
+
+                    @include m.breakpoint(desktop) {
+                        top: -68px;
+                        right: -120px;
                     }
                 }
             }
