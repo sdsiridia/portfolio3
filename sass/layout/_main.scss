@@ -82,9 +82,6 @@
                 }
             }
 
-            // .oval__articulos {
-            //     // display: none;
-            // }
 
             .oval {
                 position: absolute;
@@ -104,6 +101,12 @@
                     position: absolute;
                     left: -250px;
 
+                    @include m.breakpoint(tablet) {
+
+                        top: -460px;
+                        left: -950px;
+                    }
+
                     @include m.breakpoint(desktop) {
                         top: -130px;
                         left: -1350px;
@@ -114,6 +117,12 @@
                     position: absolute;
                     top: -26px;
                     left: -250px;
+
+                    @include m.breakpoint(tablet) {
+
+                        top: -470px;
+                        left: -950px;
+                    }
 
                     @include m.breakpoint(desktop) {
                         top: -142px;
@@ -126,6 +135,12 @@
                     top: -38px;
                     left: -250px;
 
+                    @include m.breakpoint(tablet) {
+
+                        top: -480px;
+                        left: -950px;
+                    }
+
                     @include m.breakpoint(desktop) {
                         top: -154px;
                         left: -1350px;
@@ -137,6 +152,12 @@
                     top: -52px;
                     left: -250px;
 
+                    @include m.breakpoint(tablet) {
+
+                        top: -490px;
+                        left: -950px;
+                    }
+
                     @include m.breakpoint(desktop) {
                         top: -166px;
                         left: -1350px;
@@ -147,6 +168,12 @@
                     position: absolute;
                     top: -68px;
                     left: -250px;
+
+                    @include m.breakpoint(tablet) {
+
+                        top: -500px;
+                        left: -950px;
+                    }
 
                     @include m.breakpoint(desktop) {
                         top: -178px;
