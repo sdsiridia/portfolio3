@@ -340,20 +340,19 @@
         }
 
         .container__contacto {
-            background-color: v.$gray;
-            width: calc(100% + 32px);
-            margin: 0 -16px;
-            padding: 0 16px;
+            // background-color: v.$gray;
+            width: 100%;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
 
             @include m.breakpoint(desktop) {
-                /* Limitar el fondo y el contenedor a 1440px y centrar en pantalla */
                 position: relative;
-                width: 100%;
+                // width: 100vw;
                 max-width: 1440px;
-                margin: 0 auto;
-                padding: 0 16px;
-                box-sizing: border-box;
+                background-color: v.$gray;
+                margin: 0;
+                padding: 0;
             }
         }
 
@@ -394,12 +393,12 @@
                 justify-content: space-around;
                 align-items: flex-start;
                 padding-top: 84px;
-                padding-bottom: 180px;
+                padding-bottom: 80px;
                 width: 100%;
                 // max-width: 1200px;
                 margin: 0 auto;
                 box-sizing: border-box;
-                // margin-left: 170px;
+                margin-left: auto;
                 // gap: 40px;
             }
 

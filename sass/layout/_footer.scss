@@ -2,27 +2,34 @@
 @use "../abstracts/mixins" as m;
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: v.$gray;
-
-    @include m.breakpoint(tablet) {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 30px;
+    @include m.breakpoint(desktop) {
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
     }
 
-    @include m.breakpoint(desktop) {
-        // padding: 0 170px;
-        // margin: auto;
-        // // max-width: 1200px;
-        // width: 100%;
-        max-width: 1440px;
-        width: 100vw;
-        margin: auto;
-        padding: auto;
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+
+        @include m.breakpoint(tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+
+        @include m.breakpoint(desktop) {
+            max-width: 1110px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            align-items: center;
+        }
     }
 
     .navbar {
