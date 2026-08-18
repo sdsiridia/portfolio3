@@ -402,11 +402,12 @@
             // left: 50%;
             // transform: translateX(-50%);
             margin: 0;
-            padding: 0;
+            padding: 0 16px;
             box-sizing: border-box;
 
             @include m.breakpoint(tablet) {
                 margin: 0;
+                padding: 0;
             }
 
             @include m.breakpoint(desktop) {
